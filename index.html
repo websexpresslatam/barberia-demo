@@ -1,124 +1,234 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Barbería Premium</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barbería Premium | Turnos por WhatsApp</title>
+  <meta name="description" content="Cortes modernos, barba y combos. Turnos por WhatsApp. Atención profesional en Montevideo." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong>Barbería Premium</strong>
+          <span>Montevideo</span>
+        </div>
+      </div>
 
-<header class="hero">
-    <h1>Barbería Premium</h1>
-    <p>Cortes modernos • Barba • Turnos online</p>
-    <button onclick="contactar()">Reservar turno</button>
-</header>
+      <nav class="links">
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
 
-<section class="servicios">
-    <h2>Servicios</h2>
-
-    <div class="card">
-        <h3>Corte de pelo</h3>
-        <p>Cortes modernos y clásicos</p>
+      <button class="btn btn-primary btn-small" onclick="contactar()">Reservar</button>
     </div>
+  </header>
 
-    <div class="card">
-        <h3>Barba</h3>
-        <p>Perfilado profesional</p>
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">Turnos online • Atención profesional</p>
+          <h1>Cortes modernos, barba y combos <span class="accent">en un lugar</span>.</h1>
+          <p class="lead">
+            Reserva por WhatsApp en segundos. Te confirmamos horario y listo.
+          </p>
+
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="contactar()">Reservar turno</button>
+            <a class="btn btn-ghost" href="#precios">Ver precios</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-title">⏱️ Entrega rápida</span>
+              <span class="meta-sub">Confirmación por WhatsApp</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-title">⭐ Calidad</span>
+              <span class="meta-sub">Estilo prolijo y duradero</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-title">📍 Montevideo</span>
+              <span class="meta-sub">Atención con agenda</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>¿Qué incluye?</h2>
+          <ul class="checklist">
+            <li>Asesoramiento según tu cara y pelo</li>
+            <li>Terminaciones prolijas</li>
+            <li>Perfilado y línea si querés</li>
+            <li>Ambiente cómodo</li>
+          </ul>
+
+          <button class="btn btn-primary btn-full" onclick="contactar()">Escribime por WhatsApp</button>
+          <p class="small muted">Respondemos lo antes posible.</p>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <h2>Servicios</h2>
+          <p class="muted">Elegí lo que necesitás. Si tenés duda, te asesoramos por WhatsApp.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Corte de pelo</h3>
+            <p class="muted">Cortes modernos y clásicos, fade, tijera y terminaciones.</p>
+            <button class="linklike" onclick="contactar()">Consultar turno →</button>
+          </article>
+
+          <article class="card">
+            <h3>Barba</h3>
+            <p class="muted">Perfilado profesional, prolijo y simétrico. Línea opcional.</p>
+            <button class="linklike" onclick="contactar()">Consultar turno →</button>
+          </article>
+
+          <article class="card">
+            <h3>Corte + Barba</h3>
+            <p class="muted">Combo completo para salir impecable.</p>
+            <button class="linklike" onclick="contactar()">Consultar turno →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="section alt" id="precios">
+      <div class="container">
+        <div class="section-head">
+          <h2>Precios</h2>
+          <p class="muted">Valores de referencia. Confirmá por WhatsApp promos o disponibilidad.</p>
+        </div>
+
+        <div class="grid pricing">
+          <article class="price-card">
+            <div class="price-top">
+              <h3>Corte</h3>
+              <p class="price">$500</p>
+            </div>
+            <ul class="mini">
+              <li>Incluye terminaciones</li>
+              <li>Estilo a elección</li>
+            </ul>
+            <button class="btn btn-ghost btn-full" onclick="contactar()">Reservar</button>
+          </article>
+
+          <article class="price-card featured">
+            <div class="tag">Más elegido</div>
+            <div class="price-top">
+              <h3>Corte + Barba</h3>
+              <p class="price">$750</p>
+            </div>
+            <ul class="mini">
+              <li>Combo completo</li>
+              <li>Perfilado y prolijidad</li>
+            </ul>
+            <button class="btn btn-primary btn-full" onclick="contactar()">Reservar</button>
+          </article>
+
+          <article class="price-card">
+            <div class="price-top">
+              <h3>Barba</h3>
+              <p class="price">$350</p>
+            </div>
+            <ul class="mini">
+              <li>Perfilado profesional</li>
+              <li>Línea opcional</li>
+            </ul>
+            <button class="btn btn-ghost btn-full" onclick="contactar()">Reservar</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="section" id="opiniones">
+      <div class="container">
+        <div class="section-head">
+          <h2>Opiniones</h2>
+          <p class="muted">Lo que dicen algunos clientes.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card quote">
+            <p>“La mejor barbería de la zona 🔥”</p>
+            <span class="muted">— Juan</span>
+          </article>
+          <article class="card quote">
+            <p>“Excelente atención y servicio.”</p>
+            <span class="muted">— Martín</span>
+          </article>
+          <article class="card quote">
+            <p>“Siempre vuelvo 💯”</p>
+            <span class="muted">— Lucas</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section alt" id="contacto">
+      <div class="container contact">
+        <div>
+          <h2>Contacto</h2>
+          <p class="muted">
+            Reservá por WhatsApp y te confirmamos horario. Si querés, mandá: <br />
+            <strong>Servicio</strong> + <strong>día</strong> + <strong>hora aproximada</strong>.
+          </p>
+
+          <div class="contact-box">
+            <div class="contact-item">
+              <span class="muted">📍 Zona</span>
+              <strong>Montevideo, Uruguay</strong>
+            </div>
+            <div class="contact-item">
+              <span class="muted">🕒 Horario</span>
+              <strong>A coordinar</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-panel">
+          <h3>¿Listo para reservar?</h3>
+          <p class="muted">Tocá el botón y te abre WhatsApp con un mensaje armado.</p>
+          <button class="btn btn-primary btn-full" onclick="contactar()">Reservar por WhatsApp</button>
+          <p class="small muted">Tip: si no abre, probá desde el celular.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Barbería Premium</strong>
+        <p class="muted small">Montevideo • Uruguay</p>
+      </div>
+      <div class="footer-actions">
+        <a class="small muted" href="#inicio">Volver arriba</a>
+        <button class="btn btn-ghost btn-small" onclick="contactar()">Turnos por WhatsApp</button>
+      </div>
     </div>
+  </footer>
 
-    <div class="card">
-        <h3>Corte + Barba</h3>
-        <p>Combo completo</p>
-    </div>
-
-</section>
-
-<section class="precios">
-  <h2>Precios</h2>
-
-  <div class="card">
-    <h3>Corte</h3>
-    <p class="precio">$500</p>
-  </div>
-
-  <div class="card">
-    <h3>Barba</h3>
-    <p class="precio">$350</p>
-  </div>
-
-  <div class="card">
-    <h3>Corte + Barba</h3>
-    <p class="precio">$750</p>
-  </div>
-</section>
-
-<section class="testimonios">
-  <h2>Opiniones</h2>
-
-  <div class="card">
-    <p>"La mejor barbería de la zona 🔥"</p>
-    <strong>- Juan</strong>
-  </div>
-
-  <div class="card">
-    <p>"Excelente atención y servicio"</p>
-    <strong>- Martín</strong>
-  </div>
-
-  <div class="card">
-    <p>"Siempre vuelvo 💯"</p>
-    <strong>- Lucas</strong>
-  </div>
-</section>
-
-<script src="script.js"></script>
-<footer>
-  <p>Barbería Premium © 2026</p>
-  <p>Montevideo • Uruguay</p>
-  <p>Turnos por WhatsApp</p>
-</footer>
+  <script src="script.js"></script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Barbería Premium</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="hero">
-    <h1>Barbería Premium</h1>
-    <p>Cortes modernos • Barba • Turnos online</p>
-    <button onclick="contactar()">Reservar turno</button>
-</header>
-
-<section class="servicios">
-    <h2>Servicios</h2>
-
-    <div class="card">
-        <h3>Corte de pelo</h3>
-        <p>Cortes modernos y clásicos</p>
-    </div>
-
-    <div class="card">
-        <h3>Barba</h3>
-        <p>Perfilado profesional</p>
-    </div>
-
-    <div class="card">
-        <h3>Corte + Barba</h3>
-        <p>Combo completo</p>
-    </div>
-
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
->>>>>>> ed5e8b6e381b7a8968042d7d1561902b086444a3

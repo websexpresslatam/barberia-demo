@@ -1,26 +1,34 @@
-<<<<<<< HEAD
-function contactar(){
-  // Cambiá este número por el del negocio (con prefijo, sin +, sin espacios)
-  // Ejemplo Uruguay: 5989XXXXXXX | Argentina: 54911XXXXXXX
-  const numero = "598000000000";
+// 🔥 CAMBIÁ SOLO ESTE NÚMERO
+const numero = "598000000000"; // sin + ni espacios
 
-  const mensaje = encodeURIComponent(
-    "Hola! Quiero reservar un turno en Barbería Premium. ¿Qué horarios tienen disponibles?"
-  );
-
+function enviarWhatsApp(texto){
+  const mensaje = encodeURIComponent(texto);
   window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
 }
 
-=======
+// Botón principal hero
 function contactar(){
-  // Cambiá este número por el del negocio (con prefijo, sin +, sin espacios)
-  // Ejemplo Uruguay: 5989XXXXXXX | Argentina: 54911XXXXXXX
-  const numero = "598000000000";
-
-  const mensaje = encodeURIComponent(
-    "Hola! Quiero reservar un turno en Barbería Premium. ¿Qué horarios tienen disponibles?"
+  enviarWhatsApp(
+    "Hola! Quiero reservar un turno en Barbería Premium 💈 ¿Qué horarios tienen disponibles?"
   );
-
-  window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
 }
->>>>>>> ed5e8b6e381b7a8968042d7d1561902b086444a3
+
+// Botones de precios
+function reservarCorte(){
+  enviarWhatsApp(
+    "Hola! Quiero reservar un turno para CORTE de pelo 💇‍♂️"
+  );
+}
+
+function reservarBarba(){
+  enviarWhatsApp(
+    "Hola! Quiero reservar un turno para BARBA 🧔"
+  );
+}
+
+function reservarCombo(){
+  enviarWhatsApp(
+    "Hola! Quiero reservar el COMBO Corte + Barba 🔥"
+  );
+}
+
